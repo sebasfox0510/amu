@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/udem"
+    tools:context=".registroActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="AM"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginVertical="170dp"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-black">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="U"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginLeft="217dp"
+        android:layout_marginVertical="170dp"
+        android:textColor="#DC0C15"
+        android:fontFamily="sans-serif-black">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="240dp"
+            android:alpha="0.5"
+            android:hint="Name"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:drawableLeft="@drawable/ic_nombre"
+            android:fontFamily="sans-serif"
+            android:id="@+id/txtNombre"
+            android:background="@drawable/bordes_redondos"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0.5"
+            android:hint="Last name"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:drawableLeft="@drawable/ic_apellido"
+            android:fontFamily="sans-serif"
+            android:id="@+id/txtApellido"
+            android:background="@drawable/bordes_redondos"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0.5"
+            android:hint="Email"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:drawableLeft="@drawable/ic_email"
+            android:fontFamily="sans-serif"
+            android:id="@+id/txtEmail"
+            android:background="@drawable/bordes_redondos"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bordes_redondos"
+            android:alpha="0.5"
+            android:layout_marginTop="15dp"
+            android:hint="Password"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:drawableLeft="@drawable/ic_contra"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/txtContraseña"
+            android:password="true"></EditText>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="REGISTER"
+            android:fontFamily="sans-serif-black"
+            android:background="@drawable/bordes_redondos2"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#ffffff"
+            android:id="@+id/btnRegistro"></Button>
+    </LinearLayout>
+
+
+</RelativeLayout>

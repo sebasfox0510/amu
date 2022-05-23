@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/udem"
+    tools:context=".equipoActivity">
+
+    <TextView
+        android:id="@+id/tvEquipos"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/bordes_redondos8"
+        android:drawableLeft="@drawable/atomo"
+        android:fontFamily="sans-serif"
+        android:text="UNIVERSIDAD DE MEDELLIN\n\nEquipos"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp"></TextView>
+
+    <EditText
+        android:id="@+id/txtBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvEquipos"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:alpha="0.5"
+        android:background="@drawable/bordes_redondos"
+        android:drawableLeft="@drawable/ic_busqueda"
+        android:fontFamily="sans-serif"
+        android:hint="Buscar"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"></EditText>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/idGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtBuscar"
+        android:padding="10dp"
+        app:columnCount="1"
+        app:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/perfil"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="@color/purple_200"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_gravity="center_horizontal|center_vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/balanza"></ImageView>
+
+                <TextView
+                    android:id="@+id/tvBalanza"
+                    android:layout_width="167dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:text="Balanza Digital\nSerie: B325474483(OHAUS-EXPLORER)\ncódigo: 37064"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_gravity="center_horizontal|center_vertical">
+
+                    <Button
+                        android:id="@+id/btnInfo1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/informacion">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btnEditar1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editar">
+                    </Button>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/perfil2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="#D9ECF2"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_gravity="center_horizontal|center_vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="83dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/horno"></ImageView>
+
+                <TextView
+                    android:layout_width="167dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:text="Horno de secado\nSerie: 13-00526(BINDER-FD240)\ncódigo: 37059"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_gravity="center_horizontal|center_vertical">
+
+                    <Button
+                        android:id="@+id/btnInfo2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/informacion">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btnEditar2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editar">
+                    </Button>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/perfil3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="@color/purple_200"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_gravity="center_horizontal|center_vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="83dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/termometro"></ImageView>
+
+                <TextView
+                    android:layout_width="166dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:text="Termometro\nSerie: 2312(CASIO-2017)\ncódigo: LM 222"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_gravity="center_horizontal|center_vertical">
+
+                    <Button
+                        android:id="@+id/btnInfo3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/informacion">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btnEditar3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editar">
+                    </Button>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/perfil4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="#D9ECF2"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_gravity="center_horizontal|center_vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="83dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/cronometro"></ImageView>
+
+                <TextView
+                    android:layout_width="166dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:text="Cronometro\nSerie: 3456(EPSON-2021)\ncódigo: LM 222"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_gravity="center_horizontal|center_vertical">
+
+                    <Button
+                        android:id="@+id/btnInfo4"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/informacion">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btnEditar4"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editar">
+                    </Button>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/perfil5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="@color/purple_200"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_gravity="center_horizontal|center_vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="83dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/investigacion"></ImageView>
+
+                <TextView
+                    android:layout_width="166dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:text="Termohigrometro\nSerie: 8615(HALTHEN-TTH-002)\ncódigo: LM 066"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_gravity="center_horizontal|center_vertical">
+
+                    <Button
+                        android:id="@+id/btnInfo5"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/informacion">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btnEditar5"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editar">
+                    </Button>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/perfil6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="#D9ECF2"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_gravity="center_horizontal|center_vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="83dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/laboratorio"></ImageView>
+
+                <TextView
+                    android:layout_width="166dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:text="Termometro 323\nSerie: 2312(CASIO-2017)\ncódigo: LM 222"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_gravity="center_horizontal|center_vertical">
+
+                    <Button
+                        android:id="@+id/btnInfo6"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/informacion">
+                    </Button>
+
+                    <Button
+                        android:id="@+id/btnEditar6"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/editar">
+                    </Button>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
+</RelativeLayout>

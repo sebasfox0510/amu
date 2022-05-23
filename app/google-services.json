@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "966829297247",
+    "firebase_url": "https://laboratorioandroid-ec5a7-default-rtdb.firebaseio.com",
+    "project_id": "laboratorioandroid-ec5a7",
+    "storage_bucket": "laboratorioandroid-ec5a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966829297247:android:d69c235537b4faa25b95ea",
+        "android_client_info": {
+          "package_name": "com.example.isw4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966829297247-s0sr4bah98a6u7nd0krmbecf0cedqdhj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7DotfKbhnqsHl6QRWX8SXRyRbb1u4Rc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966829297247-s0sr4bah98a6u7nd0krmbecf0cedqdhj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
